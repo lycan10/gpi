@@ -1,0 +1,170 @@
+.stats{
+   
+}
+.stat-container {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .stat-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 500px;
+    background-image: url('../../assets/stats-img.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+.stats-image{
+    position: fixed;
+    z-index: 0;
+    object-fit: cover;
+}
+.stats-container{
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+}
+.stats-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    margin: 0 6rem;
+}
+.stats-content h1{
+    font-family: "lora", serif;
+    font-size: 23px;
+    color: white;
+    font-weight: 500;
+    z-index: 99 ;
+    margin: 3rem 0 0;
+}
+.stats-content p{
+    font-family: "lora", serif;
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 38px;
+    color: #818181;
+    z-index: 99 ;
+    max-width: 750px;
+    text-align: center;
+    margin: 2rem 0;
+}
+.stat-button{
+    font-family: "lora", serif;
+    font-size: 16px;
+    font-weight: 200;
+    color: white;
+    z-index: 99 ;
+    background-color: #000066;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    margin-top: 2rem;
+    transition: all 0.5s;
+}
+.stat-button:hover{
+    color: #000066;
+    background-color: #f4f8fd;
+    border: 1px solid #000066;
+}
+
+.stat-button span{
+    text-decoration: none;
+}
+.cta-background{
+    height: 500px;
+    width: 100%;
+    bottom: 0px;
+    position: absolute;
+    z-index: 40;
+    background-color: rgba(0, 0, 0, 0.8)
+}
+@media (max-width: 800px) {
+    .stat-container {
+        position: relative;
+        width: 100%;
+        height: 400px;
+    }
+    .stat-button{
+        font-family: "lora", serif;
+        font-size: 16px;
+        font-weight: 200;
+        color: white;
+        z-index: 99 ;
+        padding: 1rem 2rem;
+        text-decoration: none;
+        margin-top: 0.5rem;
+        transition: all 0.5s;
+    }
+    .stats-content h1{
+        font-family: "lora", serif;
+        font-size: 23px;
+        color: #f4f8fd;
+        font-weight: 500;
+        z-index: 99 ;
+        margin: 2rem 0 0;
+    }
+    .stats-content p{
+        font-family: "lora", serif;
+        font-size: 14px;
+        font-weight: 200;
+        line-height: 23px;
+        z-index: 99 ;
+        max-width: 750px;
+        text-align: center;
+        margin: 1.5rem 0 2rem; 
+    }
+}
+@media (max-width: 500px) {
+    .stat-container {
+        position: relative;
+        width: 100%;
+        height: 300px;
+    }
+    .stats-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+        margin: 0 2rem;
+    }
+    .stats-content h1{
+        font-family: "lora", serif;
+        font-size: 12px;
+        text-align: center;
+        margin-top: 0rem;
+    }
+    .stats-content p{
+        font-family: "lora", serif;
+        font-size: 12px;
+        font-weight: 200;
+        line-height: 23px;
+        z-index: 99 ;
+        max-width: 300px;
+        text-align: center;
+        margin: 1rem 0;
+    }
+    .stat-button{
+        font-family: "lora", serif;
+        font-size: 12px;
+        font-weight: 200;
+        color: white;
+        z-index: 99 ;
+        padding: 0.6rem 1.2rem;
+        text-decoration: none;
+        margin-top: 0.7rem;
+        transition: all 0.5s;
+    }
+}

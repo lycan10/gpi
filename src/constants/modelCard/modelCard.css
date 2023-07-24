@@ -1,0 +1,312 @@
+.modelcards{
+  
+}
+.modelcards-title{
+
+}
+.modelcards-content-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+}
+.modelcards-content-div h1{
+    font-size: 22px;
+    color: #FFF;
+    margin: 0;
+}
+.modelcards-title p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 32px;
+    max-width: 650px;
+    color: rgb(154, 154, 154);
+    margin: 1rem 0 3rem; 
+}
+.modelcards-line{
+    content: "";
+    width: 50px;
+    height: 2px;
+    background-color: #FFF;
+    margin: 0rem 1rem;
+}
+.modelcards-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+}
+.model-cards{
+    border: 1px solid white;
+    position: relative;
+}
+.model-cards h1{
+    color: white;
+    font-family: 'Adamina', 'serif';
+    font-size: 33px;
+    margin: 1.7rem 0;
+}
+.model-cards:hover .model-cards-img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.model-cards:hover .model-cards-background{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.65);
+    z-index: 5;
+}
+.model-cards:hover .model-cards-button{
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    background-color: #000066;
+    border: none;
+    outline: none;
+    color: white;
+    z-index: 20;
+    transition: all 0.2s;
+}
+.model-cards:hover .model-cards-button:hover{
+    color: #000f33;
+    background-color: white;
+    border: 2px solid #000066;
+   
+}
+.model-cards p{
+    font-family: 'Open Sans', sans-serif;
+    color: #BEBEBE;
+    line-height: 33px;
+}
+.model-cards-img{
+   display: none;
+}
+.model-cards-img img{
+    width: 100%;
+    height: 100%;
+}
+.model-cards-content{
+    padding: 4rem 3rem;
+}
+.modal-body p{
+    font-size: 19px;
+    line-height: 33px;
+}
+.fade .modal-backdrop .show {
+    z-index: 50;
+}
+.modal-content{
+    z-index: 21;
+}
+@media screen and (max-width: 1200px) {
+  
+    .modelcards-content-div h1{
+        font-size: 19px;
+        margin: 0;
+    }
+    .modelcards-title p{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        line-height: 32px;
+        max-width: 650px;
+        color: rgb(154, 154, 154);
+        margin: 1rem 0 3rem; 
+    }
+    .modelcards-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+    }
+    .model-cards h1{
+        font-size:24px;
+        margin: 1.2rem 0;
+    }
+    .model-cards:hover .model-cards-button{
+        position: absolute;
+        width: 110px;
+        height: 40px;
+        font-size: 14px;
+    }
+    .model-cards:hover .model-cards-button:hover{
+        color: #000f33;
+        background-color: white;
+       
+    }
+    .model-cards p{
+        font-family: 'Open Sans', sans-serif;
+        color: #BEBEBE;
+        font-size: 14px;
+        line-height: 28px;
+    }
+    .model-cards-content{
+        padding: 2rem 2.5rem;
+    }
+    
+}
+@media screen and (max-width: 800px) {
+  
+    .modelcards-content-div h1{
+        font-size: 19px;
+        margin: 0;
+    }
+    .modelcards-title p{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 12px;
+        line-height: 28px;
+        max-width: 650px;
+        color: rgb(154, 154, 154);
+        margin: 1rem 0 3rem; 
+    }
+    .modelcards-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+    .model-cards h1{
+        font-size:14px;
+        margin: 1.2rem 0;
+    }
+    .model-cards:hover .model-cards-button{
+        position: absolute;
+        width: 110px;
+        height: 40px;
+        font-size: 14px;
+    }
+    .model-cards:hover .model-cards-button:hover{
+        color: #000f33;
+        background-color: white;
+       
+    }
+    .model-cards p{
+        font-family: 'Open Sans', sans-serif;
+        color: #BEBEBE;
+        font-size: 12px;
+        line-height: 23px;
+    }
+    .model-cards-content{
+        padding: 1rem 1.5rem;
+    }
+    .modelcards-line{
+        width: 40px;
+        height: 2px;
+        margin: 0rem 0.6rem;
+    }
+}
+@media screen and (max-width: 501px) {
+  
+    .modelcards-content-div h1{
+        font-size: 14px;
+        margin: 0;
+    }
+    .modelcards-line{
+        width: 30px;
+        margin: 0rem 0.5rem;
+    }
+    .modelcards-title p{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 12px;
+        line-height: 25px;
+        max-width: 350px;
+        color: rgb(154, 154, 154);
+        margin: 0.5rem 0 2rem; 
+    }
+    .modelcards-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    .model-cards h1{
+        font-size: 14px;
+        margin: 0.7rem 0;
+    }
+    .model-cards:hover .model-cards-button{
+        position: absolute;
+        width: 80px;
+        height: 30px;
+        font-size: 10px;
+    }
+    .model-cards:hover .model-cards-button:hover{
+        color: #000f33;
+        background-color: white;
+       
+    }
+    .model-cards p{
+        font-family: 'Open Sans', sans-serif;
+        color: #BEBEBE;
+        font-size: 10px;
+        line-height: 18px;
+    }
+    .model-cards-content{
+        padding: 1rem 1.5rem;
+    }
+    .model-cards-content img{
+        width: 20px;
+        height: 20px;
+    }
+    .modal-body p{
+        font-size: 13px;
+        line-height: 23px;
+    }
+}
+@media screen and (max-width: 351px) {
+  
+    .modelcards-content-div h1{
+        font-size: 12px;
+        margin: 0;
+    }
+    .modelcards-line{
+        width: 30px;
+        margin: 0rem 0.5rem;
+    }
+    .modelcards-title p{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 12px;
+        line-height: 25px;
+        max-width: 350px;
+        color: rgb(154, 154, 154);
+        margin: 0.5rem 0 1.5rem; 
+    }
+    .modelcards-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+    .model-cards h1{
+        font-size: 11px;
+        margin: 0.5rem 0;
+    }
+    .model-cards:hover .model-cards-button{
+        position: absolute;
+        width: 80px;
+        height: 30px;
+        font-size: 10px;
+    }
+    .model-cards:hover .model-cards-button:hover{
+        color: #000f33;
+        background-color: white;
+       
+    }
+    .model-cards p{
+        font-family: 'Open Sans', sans-serif;
+        color: #BEBEBE;
+        font-size: 8px;
+        line-height: 14px;
+        margin-bottom: 0;
+    }
+    .model-cards-content img{
+        width: 15px;
+        height: 15px;
+    }
+    .model-cards-content{
+        padding: 0.8rem 1rem;
+    }
+}
